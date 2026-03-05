@@ -50,11 +50,11 @@ const DashboardLayout = ({ children, type }: DashboardLayoutProps) => {
                                 className={cn(
                                     "flex items-center gap-4 px-4 py-3 rounded-2xl transition-all font-medium text-sm",
                                     isActive
-                                        ? "bg-white/10 text-premium-light shadow-inner"
-                                        : "text-blue-100/60 hover:text-white hover:bg-white/5"
+                                        ? "bg-white/10 text-white shadow-inner"
+                                        : "text-blue-100/80 hover:text-white hover:bg-white/5"
                                 )}
                             >
-                                <link.icon size={20} />
+                                <link.icon size={20} className={isActive ? "text-premium-light" : "text-blue-200/60"} />
                                 {link.name}
                             </Link>
                         );
@@ -62,8 +62,8 @@ const DashboardLayout = ({ children, type }: DashboardLayoutProps) => {
                 </nav>
 
                 <div className="p-4 mt-auto">
-                    <button className="flex items-center gap-4 px-4 py-3 w-full rounded-2xl text-blue-100/40 hover:text-white transition-colors font-medium text-sm">
-                        <LogOut size={20} />
+                    <button className="flex items-center gap-4 px-4 py-3 w-full rounded-2xl text-blue-100/70 hover:text-white transition-colors font-medium text-sm">
+                        <LogOut size={20} className="text-blue-300/40" />
                         Cerrar Sesión
                     </button>
                 </div>
@@ -91,7 +91,7 @@ const DashboardLayout = ({ children, type }: DashboardLayoutProps) => {
                         <div className="flex items-center gap-3">
                             <div className="text-right">
                                 <div className="text-sm font-bold text-premium-blue">Alexei Bot</div>
-                                <div className="text-[10px] font-black uppercase tracking-widest text-premium-light">Advisor</div>
+                                <div className="text-[10px] font-black uppercase tracking-widest text-premium-blue/60">Advisor</div>
                             </div>
                             <div className="w-10 h-10 rounded-full premium-gradient overflow-hidden border-2 border-slate-100 p-0.5">
                                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center text-premium-blue font-black text-xs">AB</div>

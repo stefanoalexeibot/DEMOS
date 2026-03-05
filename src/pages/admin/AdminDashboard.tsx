@@ -59,7 +59,7 @@ const AdminDashboard = () => {
                     </div>
                     <div className="overflow-x-auto">
                         <table className="w-full text-left">
-                            <thead className="bg-slate-50/50 text-slate-400 text-[10px] font-black uppercase tracking-widest">
+                            <thead className="bg-slate-50/80 text-slate-600 text-[11px] font-black uppercase tracking-widest">
                                 <tr>
                                     <th className="px-6 py-4">Propiedad</th>
                                     <th className="px-6 py-4">Estatus</th>
@@ -104,10 +104,10 @@ const AdminDashboard = () => {
                                     {item.user[0]}
                                 </div>
                                 <div>
-                                    <p className="text-xs leading-relaxed">
-                                        <span className="font-bold text-premium-blue">{item.user}</span> {item.action} <span className="font-bold text-slate-700">{item.target}</span>
+                                    <p className="text-sm leading-relaxed text-slate-600">
+                                        <span className="font-bold text-premium-blue">{item.user}</span> {item.action} <span className="font-bold text-premium-blue">{item.target}</span>
                                     </p>
-                                    <span className="text-[10px] text-slate-400 uppercase tracking-widest font-bold">{item.time}</span>
+                                    <span className="text-[10px] text-slate-500 uppercase tracking-widest font-black">{item.time}</span>
                                 </div>
                             </div>
                         ))}

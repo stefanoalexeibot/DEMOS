@@ -29,10 +29,10 @@ const OwnerDashboard = () => {
                         { label: 'Cierre', done: false },
                     ].map((step, i) => (
                         <div key={i} className="relative z-10 flex flex-col items-center gap-4">
-                            <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${step.done ? 'bg-premium-light text-white shadow-lg' : 'bg-white border-2 border-slate-100 text-slate-300'}`}>
+                            <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold ${step.done ? 'bg-premium-light text-white shadow-lg' : 'bg-white border-2 border-slate-200 text-slate-400'}`}>
                                 {step.done ? <ShieldCheck size={20} /> : i + 1}
                             </div>
-                            <span className={`text-xs font-bold uppercase tracking-widest ${step.done ? 'text-premium-blue' : 'text-slate-400'}`}>{step.label}</span>
+                            <span className={`text-[10px] font-black uppercase tracking-widest ${step.done ? 'text-premium-blue' : 'text-slate-500'}`}>{step.label}</span>
                         </div>
                     ))}
                 </div>
@@ -51,7 +51,7 @@ const OwnerDashboard = () => {
                         ].map((item, i) => (
                             <div key={i} className="flex items-center gap-4 p-4 rounded-2xl border border-slate-50 hover:border-premium-blue/10 transition-colors">
                                 <div className={`w-10 h-10 rounded-xl flex items-center justify-center ${item.status === 'done' ? 'bg-green-50 text-green-500' :
-                                        item.status === 'active' ? 'bg-blue-50 text-blue-500' : 'bg-slate-50 text-slate-300'
+                                    item.status === 'active' ? 'bg-blue-50 text-blue-500' : 'bg-slate-50 text-slate-300'
                                     }`}>
                                     <ShieldCheck size={20} />
                                 </div>
@@ -59,8 +59,8 @@ const OwnerDashboard = () => {
                                     <h4 className="text-sm font-bold text-premium-blue">{item.title}</h4>
                                     <p className="text-xs text-slate-400 font-medium">{item.date}</p>
                                 </div>
-                                <div className={`text-[10px] font-black uppercase tracking-widest ${item.status === 'done' ? 'text-green-500' :
-                                        item.status === 'active' ? 'text-blue-500' : 'text-slate-300'
+                                <div className={`text-[11px] font-black uppercase tracking-widest ${item.status === 'done' ? 'text-green-600' :
+                                        item.status === 'active' ? 'text-blue-600' : 'text-slate-500'
                                     }`}>
                                     {item.status === 'done' ? 'Listo' : item.status === 'active' ? 'Activo' : 'Próximo'}
                                 </div>
@@ -93,8 +93,8 @@ const OwnerDashboard = () => {
                                     <TrendingUp size={20} />
                                 </div>
                                 <div>
-                                    <div className="text-xl font-bold text-premium-blue">342</div>
-                                    <span className="text-[10px] text-slate-400 uppercase font-black tracking-widest">Vistas totales</span>
+                                    <div className="text-2xl font-black text-premium-blue">342</div>
+                                    <span className="text-[10px] text-slate-500 uppercase font-black tracking-widest">Vistas totales</span>
                                 </div>
                             </div>
                             <div className="flex items-center gap-4">
@@ -102,8 +102,8 @@ const OwnerDashboard = () => {
                                     <Clock size={20} />
                                 </div>
                                 <div>
-                                    <div className="text-xl font-bold text-premium-blue">12 días</div>
-                                    <span className="text-[10px] text-slate-400 uppercase font-black tracking-widest">En el mercado</span>
+                                    <div className="text-2xl font-black text-premium-blue">12 días</div>
+                                    <span className="text-[10px] text-slate-500 uppercase font-black tracking-widest">En el mercado</span>
                                 </div>
                             </div>
                         </div>

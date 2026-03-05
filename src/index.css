@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@theme {
+  --color-premium-blue: #003366;
+  --color-premium-light: #0056b3;
+  --color-premium-accent: #F8F9FA;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

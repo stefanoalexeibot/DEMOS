@@ -15,10 +15,10 @@ const Navbar = () => {
     }, []);
 
     const navLinks = [
-        { name: 'Inicio', href: '#' },
-        { name: 'Propiedades', href: '#properties' },
-        { name: 'Servicios', href: '#services' },
-        { name: 'Nosotros', href: '#about' },
+        { name: 'Inicio', href: '/' },
+        { name: 'Propiedades', href: '/#properties' },
+        { name: 'Admin', href: '/admin' },
+        { name: 'Propietario', href: '/owner' },
     ];
 
     return (

@@ -15,7 +15,7 @@ const DashboardLayout = ({ children, type }: DashboardLayoutProps) => {
     const adminLinks = [
         { name: 'Dashboard', href: '/admin', icon: LayoutDashboard },
         { name: 'Propiedades', href: '/admin/properties', icon: Home },
-        { name: 'Leads', href: '/admin/leads', icon: Users },
+        { name: 'Contactos', href: '/admin/leads', icon: Users },
         { name: 'Ajustes', href: '/admin/settings', icon: Settings },
     ];
 

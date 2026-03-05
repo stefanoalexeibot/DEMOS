@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import LandingPage from './components/LandingPage';
 import DashboardLayout from './components/DashboardLayout';
 import AdminDashboard from './pages/admin/AdminDashboard';
+import LeadPipeline from './pages/admin/LeadPipeline';
 import OwnerDashboard from './pages/owner/OwnerDashboard';
 import CustomCursor from './components/CustomCursor';
 import { Mail, Phone, MapPin, Instagram, Facebook, Home } from 'lucide-react';
@@ -29,7 +30,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<AdminDashboard />} />
                 <Route path="/properties" element={<div className="p-8 text-slate-300">Gestión de Propiedades próximamente...</div>} />
-                <Route path="/leads" element={<div className="p-8 text-slate-300">Gestión de Leads próximamente...</div>} />
+                <Route path="/leads" element={<LeadPipeline />} />
                 <Route path="/settings" element={<div className="p-8 text-slate-300">Ajustes próximamente...</div>} />
               </Routes>
             </DashboardLayout>

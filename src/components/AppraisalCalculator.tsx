@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Calculator, ChevronRight, Home, MapPin, CheckCircle2 } from 'lucide-react';
+import { useState } from 'react';
+import { Calculator, ChevronRight, Home, CheckCircle2 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const AppraisalCalculator = () => {
@@ -61,8 +61,8 @@ const AppraisalCalculator = () => {
                                             key={t}
                                             onClick={() => setFormData({ ...formData, type: t.toLowerCase() })}
                                             className={`p-6 rounded-2xl border-2 transition-all text-center ${formData.type === t.toLowerCase()
-                                                    ? 'border-premium-blue bg-white shadow-md text-premium-blue'
-                                                    : 'border-slate-200 text-slate-400 hover:border-slate-300'
+                                                ? 'border-premium-blue bg-white shadow-md text-premium-blue'
+                                                : 'border-slate-200 text-slate-400 hover:border-slate-300'
                                                 }`}
                                         >
                                             <Home className="mx-auto mb-2" />

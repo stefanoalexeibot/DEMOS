@@ -1,4 +1,3 @@
-import React from 'react';
 import { Gavel, ShieldCheck, BadgeDollarSign, HeartHandshake, FileText, LayoutDashboard } from 'lucide-react';
 import { motion } from 'framer-motion';
 
